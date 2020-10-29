@@ -61,10 +61,6 @@ Promise.all([
       this.entries = await loadData()
     }
     
-    updated() {
-      this.style.setProperty('--background', this.background)
-    }
-    
     handleSortUpdate(property) {
       switch (this.sort.type) {
         case 'None':
