@@ -135,7 +135,7 @@ Promise.all([
         }
         .search-row-cell {
           position: sticky;
-          top: 0px;
+          top: var(--offset-top, 0px);
           text-align: right;
           z-index: 2;
           background-color: var(--background, #fff);
@@ -165,7 +165,7 @@ Promise.all([
           height: 56px;
         }
         .header-row-cell {
-          top: 63px;
+          top: calc(var(--offset-top, 0px) + 63px);
           position: sticky;
           padding: 0px;
           z-index: 2;
